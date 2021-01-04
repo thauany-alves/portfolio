@@ -7,6 +7,7 @@
 
 body{
     font-size: 18rem;
+    position: relative;
 }
 
 .navbar{
@@ -32,7 +33,7 @@ body{
     border-radius: 5px;
     margin: 2px;
     margin-right: 12px;
-    padding: 10px;
+    padding: 6px;
 
     transition: color 1s, background-color 2s;
 }
@@ -56,7 +57,6 @@ body{
 
 .navbar-brand:hover{
     color: gray;
-    font-size: 2rem
 }
 
 .navbar-nav a:hover{
@@ -73,15 +73,27 @@ main{
     justify-content: space-around;
 }
 
-.about-me, .skills, .edu, .works, .contacts{
+.about-me, .skills, .edu, .works{
     border: 1px solid #0DCAF0;
     border-radius: 5px;
-    margin: 10px auto;
-    padding: 24px;
-    margin: 30px auto;
+    padding: 20px;
+    margin: 24px auto;
 
     box-shadow: 2px 2px 4px #0DCAF0;
 
+}
+
+.contacts{
+    padding: 18px;
+}
+
+#contacts .info-text{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #0DCAF0;
+
+    margin-bottom: 18px;
 }
 
 .about-me{
@@ -98,8 +110,8 @@ main{
 }
 
 .about-me p{
-    font-size: 2rem;
-    line-height: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
     text-align: justify;
     
 }
@@ -110,16 +122,16 @@ main{
 
 #img-profile{
     border-radius: 50%;
-    margin-right: 16px;
-    margin-bottom: 6px;
+    margin-right: 24px;
+    margin-bottom: 10px;
     border: 2px solid white;
     box-shadow: 2px 2px 6px #0DCAF0;
-    max-width: 250px;
+    max-width: 200px;
 }
 
 
 h3{
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     font-weight: bold;
     color: #0DCAF0;
     
@@ -162,35 +174,83 @@ h3{
     /* background-color: red; */
     margin-left: 10px;
 
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
+.card-title{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.card-subtitle{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
 
 .edu-item .card-body p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 .edu-item .card-body ul{
     margin-top: 14px;
     font-size: 2rem;
+    line-height: 2.2rem;
 }
 
-#contacts .img-label {
-    width: 44px;
-    height: 44px;
-    
+#contacts .label{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 14px; 
+}
+
+#contacts .img-label {
+    width: 34px;
+    height: 34px;
+    
+    
 } 
 
-.info-text{
-    font-size: 2.6rem;
-    line-height: 3rem;
-    font-weight: 500;
-    color: #0DCAF0;
-    margin: auto;
+@media (max-width: 575.98px) {
+    #contacts .label {
+        /* margin-bottom: 8px; */
+        max-width: 140px;
+        margin: 6px auto;
+        /* border: 1px solid red; */
+
+    } 
+
+    #contacts{
+        /* text-align: center; */
+        margin: 16px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        /* border: 1px solid red; */
+    }
+
+    .skill-item{
+        width: 46%;
+    }
+
+    .skill-item .img-label{
+        width: 20px;
+        height: 20px;
+        /* border: 1px solid red */
+    }
+
+    .skill-item .img-label span{
+        margin-left: 5px;
+        font-size: 1.3rem;
+    }
 }
+
+@media (max-width: 767.98px) {
+    #img-profile{
+        text-align: center;
+    }
+}
+
+
