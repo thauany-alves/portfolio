@@ -19,63 +19,85 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="#">About Me</a>
-                  <a class="nav-link" href="#">Skills</a>
-                  <a class="nav-link active" href="#">Education</a>
-                  <!-- <a class="nav-link" href="#">Works</a> -->
+                  <a class="nav-link" aria-current="page" href="./index.html">About Me</a>
+                  <a class="nav-link" href="./skills.html">Skills</a>
+                  <a class="nav-link" href="./education.html">Education</a>
+                  <a class="nav-link active" href="./works.html">Projects</a>
                   <!-- <a class="nav-link" href="#">Contact</a> -->
                 </div>
               </div>
             </div>
         </nav>
     
-        <div class="container works">
-            <h2>Works</h2>
-            
-            <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-            </div>
+        <div class="works">
+          <h3>Projects</h3>
 
-            <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div class="project-card card">
+          <div class="row">
+              <div class="col-12 col-md-6">
+                <div id="carouselProjects" class="carousel card carousel-dark slide" data-bs-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselProjects" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselProjects" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselProjects" data-bs-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/image/initial-page.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/image/posts-page.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/image/map-page.png" class="d-block w-100" alt="...">
                     </div>
                   </div>
+                  <a class="carousel-control-prev" href="#carouselProjects" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselProjects" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
                 </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class=" card-custom">
+                  <div id="project-description" class="card-body">
+                    <h6 class="card-title text-muted">Wikir</h6>
+                    <p class="card-text">
+                      Wikir's idea is to allow people to point out problems in the city's infrastructure, 
+                      they are problems like holes in the roads, defective public lighting. 
+                    </p>
+
+                    <p class="card-text">
+                      People can post a photo and pinpoint the location of the incident.
+                    </p>
+
+                    <p class="card-text">
+                      Project that I developed is integrated with database. 
+                    </p>
+                    <div class="card-link-repository">
+                      <div class="img-label-repository">
+                        <img class="img-fluid" src="./assets/image/github.png">
+                        <span class="label-link">
+                          <a>Access the repository</a>
+                        </span>
+                      </div>
+                    </div>  
+                    
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          
         </div>
+
+            
+            
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

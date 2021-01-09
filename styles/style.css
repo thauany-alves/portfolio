@@ -85,6 +85,7 @@ main{
 
 .contacts{
     padding: 18px;
+    margin-top: 40px;
 }
 
 #contacts .info-text{
@@ -140,16 +141,20 @@ h3{
 
 
 .card{
-    border-color: #0DCAF0;
     margin-top:10px ;
+    /* border: 1px solid #3C4DE6; */
+    /* box-shadow: 1px 1px 3px #3C4DE6; */
+}
 
-    /* box-shadow: 1px 1px 2px #0DCAF0; */
+.card-custom{
+    padding: 10px;
 }
 
 .card-header{
     font-size: 1.6rem;
-    color: white;
+    color: #0f0f0f;
     background-color: #0DCAF0;
+    opacity: 0.7;
      
     padding: 12px;
 }
@@ -170,12 +175,20 @@ h3{
 }
 
 .img-label span{
-    min-width: 112px;
+    min-width: 90px;
     /* background-color: red; */
     margin-left: 10px;
 
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+.img-label span a{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    color: #3c4de6;
 }
 
 .card-title{
@@ -203,14 +216,19 @@ h3{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 6px ;
+    /* border-bottom:1px solid #3c4de6; */
+
 }
 
 #contacts .img-label {
     width: 34px;
-    height: 34px;
-    
-    
+    height: 34px;  
 } 
+
+.contact-link{
+    text-decoration: none;
+}
 
 @media (max-width: 575.98px) {
     #contacts .label {
@@ -246,6 +264,61 @@ h3{
         font-size: 1.3rem;
     }
 }
+
+.carousel{
+    height: 50vh ;
+
+}
+
+.project-card{
+    /* border-color:gainsboro; */
+    /* border-width: 2px; */
+    margin-top:10px ;
+
+    border-color: transparent;
+
+    padding: 10px;
+}
+
+#project-description h6{
+    margin-bottom: 18px;
+}
+
+#project-description p{
+    font-size: 1.4rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.card-link-repository{
+    padding: 4px;
+    margin-top: 30px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    width: 160px;
+}
+
+.img-label-repository{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    width: 30px;
+    height: 36px;
+}
+
+.label-link{
+    min-width: 110px;
+    margin-left: 6px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+
+}
+
+
+
+
 
 @media (max-width: 767.98px) {
     #img-profile{
